@@ -95,7 +95,7 @@ pub use crate::internals::query::{
     },
     view::{
         read::Read, try_read::TryRead, try_write::TryWrite, write::Write, DefaultFilter, Fetch,
-        IntoIndexableIter, ReadOnly, View,
+        IntoIndexableIter, IntoView, ReadOnly, View,
     },
     ChunkIter, ChunkView, IntoQuery, Query,
 };

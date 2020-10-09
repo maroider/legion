@@ -78,10 +78,11 @@ where
 }
 
 /// Structure describing the resource and component access conditions of the system.
+#[allow(missing_docs)]
 #[derive(Debug, Clone)]
 pub struct SystemAccess {
-    resources: Permissions<ResourceTypeId>,
-    components: Permissions<ComponentTypeId>,
+    pub resources: Permissions<ResourceTypeId>,
+    pub components: Permissions<ComponentTypeId>,
 }
 
 /// A diagnostic identifier for a system.

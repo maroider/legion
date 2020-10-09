@@ -26,7 +26,9 @@ pub mod try_read;
 pub mod try_write;
 pub mod write;
 
+/// FIXME: Document this
 pub trait IntoView {
+    /// FIXME: Document this
     type View: for<'a> View<'a> + 'static;
 }
 

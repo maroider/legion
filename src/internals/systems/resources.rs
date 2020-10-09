@@ -381,7 +381,9 @@ pub struct Resources {
 }
 
 impl Resources {
-    pub(crate) fn internal(&self) -> &UnsafeResources {
+    /// Returns the internal `UnsafeResources`. Most operations on `UnsafeResources` are, as the name
+    /// implies, unsafe.
+    pub fn internal(&self) -> &UnsafeResources {
         &self.internal
     }
 
